@@ -1,0 +1,126 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: 'Georgia', serif;
+  background: linear-gradient(135deg, #ffffff, #f5e6d3); /* branco + champagne */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container principal */
+.container {
+  text-align: center;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  max-width: 420px;
+  width: 90%;
+  border: 1px solid #e8d8c3; /* detalhe fendi */
+}
+
+/* Título */
+h1 {
+  margin-bottom: 10px;
+  font-size: 26px;
+  color: #8b6f47; /* fendi escuro */
+}
+
+/* Descrição */
+.descricao {
+  margin-bottom: 20px;
+  color: #6e5a3c;
+  font-size: 15px;
+}
+
+/* QR Code container */
+.qr-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* QR Code imagem */
+.qr-container img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border-radius: 12px;
+  padding: 10px;
+  background: #f5e6d3; /* champagne */
+}
+
+/* Caixa do PIX */
+.pix-box {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Input PIX */
+.pix-box input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #d6c2a8;
+  border-radius: 10px;
+  font-size: 14px;
+  background: #faf6f0;
+  color: #5c4a32;
+}
+
+/* Botão copiar */
+.pix-box button {
+  padding: 12px 15px;
+  border: none;
+  background: #c8a97e; /* champagne mais forte */
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+/* Hover botão */
+.pix-box button:hover {
+  background: #a88b63; /* fendi mais escuro */
+}
+
+/* Mensagem */
+#msg {
+  margin-top: 10px;
+  color: #8b6f47;
+  font-size: 14px;
+}
+
+/* 📱 Responsividade */
+@media (max-width: 480px) {
+
+  .container {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .qr-container img {
+    max-width: 220px;
+  }
+
+  .pix-box {
+    flex-direction: column;
+  }
+
+  .pix-box button {
+    width: 100%;
+  }
+}
